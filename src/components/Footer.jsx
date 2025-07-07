@@ -8,7 +8,9 @@ function Footer() {
       <div>
         <div className="social-icons">
           <a
-            href="http://facebook.com/isack.bahati"
+            href="https://www.facebook.com/profile.php?id=100074353927718
+
+"
             aria-label="Facebook"
             target="_blank"
             rel="noopener noreferrer"
