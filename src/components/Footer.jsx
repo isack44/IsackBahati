@@ -2,9 +2,10 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaInstagram, FaDiscord } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-function Footer() {
+// Accept darkMode prop
+function Footer({ darkMode }) {
   return (
-    <footer className="footer">
+    <footer className={`footer${darkMode ? " footer-dark" : ""} footer-sticky`}>
       <div>
         <div className="social-icons">
           <a

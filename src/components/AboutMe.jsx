@@ -1,6 +1,18 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+  FaWordpress,
+} from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { MdWeb, MdBuild, MdOutlineRocketLaunch } from "react-icons/md";
+
 function AboutMe() {
   return (
-    <>
+    <div className="about-me">
       <p>
         Hello! I'm a dedicated and enthusiastic self-taught Front-End Developer
         with a solid foundation in creating modern, user-friendly web
@@ -20,14 +32,73 @@ function AboutMe() {
         solutions, from custom development to efficient content management,
         catering to diverse client and company needs.
       </p>
+      <h3>Skills & Tools</h3>
       <ul>
-        <li>Languages: HTML, CSS, JavaScript (ES6+)</li>
-        <li>Frameworks/Libraries: React, Tailwind CSS</li>
-        <li>Tools/Platforms: Git, GitHub</li>
-        <li>Content Management: WordPress</li>
-        <li>Future Focus: Full-Stack Development</li>
+        <li>
+          <MdWeb style={{ marginRight: 8 }} />
+          <span>
+            <strong>Languages:</strong>
+            <span style={{ marginLeft: 8 }}>
+              <FaHtml5
+                title="HTML"
+                style={{ color: "#e34c26", marginRight: 4 }}
+              />
+              <FaCss3Alt
+                title="CSS"
+                style={{ color: "#2965f1", marginRight: 4 }}
+              />
+              <FaJs
+                title="JavaScript"
+                style={{ color: "#f7df1e", marginRight: 4 }}
+              />
+              HTML, CSS, JavaScript (ES6+)
+            </span>
+          </span>
+        </li>
+        <li>
+          <span
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              marginRight: 8,
+            }}
+          >
+            <FaReact style={{ color: "#61dafb", marginRight: 4 }} />
+            <SiTailwindcss style={{ color: "#38bdf8", marginRight: 4 }} />
+          </span>
+          <span>
+            <strong>Frameworks/Libraries:</strong>
+            <span style={{ marginLeft: 8 }}>React, Tailwind CSS</span>
+          </span>
+        </li>
+        <li>
+          <MdBuild style={{ marginRight: 8 }} />
+          <span>
+            <strong>Tools/Platforms:</strong>
+            <span style={{ marginLeft: 8 }}>
+              <FaGitAlt style={{ color: "#f34f29", marginRight: 4 }} />
+              <FaGithub style={{ color: "#333", marginRight: 4 }} />
+              Git, GitHub
+            </span>
+          </span>
+        </li>
+        <li>
+          <FaWordpress style={{ marginRight: 8, color: "#21759b" }} />
+          <span>
+            <strong>Content Management:</strong>
+            <span style={{ marginLeft: 8 }}>WordPress</span>
+          </span>
+        </li>
+        <li>
+          <MdOutlineRocketLaunch style={{ marginRight: 8 }} />
+          <span>
+            <strong>Future Focus:</strong>
+            <span style={{ marginLeft: 8 }}>Full-Stack Development</span>
+          </span>
+        </li>
       </ul>
-    </>
+    </div>
   );
 }
+
 export default AboutMe;
