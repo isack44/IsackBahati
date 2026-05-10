@@ -1,8 +1,8 @@
 import React from "react";
 
-const Contact = ({ darkMode}) => {
+const Contact = () => {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-16">
+    <section className="max-w-3xl mx-auto px-6 pt-8 md:pt-16 pb-16">
       <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-8 shadow-sm">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
           Contact

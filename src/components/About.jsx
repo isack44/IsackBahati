@@ -12,7 +12,7 @@ import { MdWeb, MdBuild, MdOutlineRocketLaunch } from "react-icons/md";
 
 function About() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-16">
+    <section className="max-w-5xl mx-auto px-6 pt-8 md:pt-16 pb-16">
       <div className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 tracking-tight">
           About

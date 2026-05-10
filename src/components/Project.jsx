@@ -1,6 +1,6 @@
 const Project = () => {
   return (
-    <div className="max-w-5xl  mx-auto px-6 py-16">
+    <div className="max-w-5xl  mx-auto px-6 pt-8 md:pt-16 pb-16">
 
       {/* Header */}
       <div className="mb-12">
