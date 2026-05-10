@@ -2,19 +2,17 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaInstagram, FaDiscord } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-// Accept darkMode prop
 function Footer({ darkMode }) {
   return (
-    <footer className={`footer${darkMode ? " footer-dark" : ""} footer-sticky`}>
-      <div>
-        <div className="social-icons">
+    <footer className="mt-10">
+      <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col items-center gap-4 text-center">
+        <div className="flex flex-wrap items-center justify-center gap-5 text-xl text-gray-500 dark:text-gray-400">
           <a
-            href="https://www.facebook.com/profile.php?id=100074353927718
-
-"
+            href="https://www.facebook.com/profile.php?id=100074353927718"
             aria-label="Facebook"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-colors duration-200 hover:text-purple-400"
           >
             <FaFacebook />
           </a>
@@ -23,6 +21,7 @@ function Footer({ darkMode }) {
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-colors duration-200 hover:text-purple-400"
           >
             <FaLinkedin />
           </a>
@@ -31,6 +30,7 @@ function Footer({ darkMode }) {
             aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-colors duration-200 hover:text-purple-400"
           >
             <FaGithub />
           </a>
@@ -39,6 +39,7 @@ function Footer({ darkMode }) {
             aria-label="Instagram"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-colors duration-200 hover:text-purple-400"
           >
             <FaInstagram />
           </a>
@@ -47,6 +48,7 @@ function Footer({ darkMode }) {
             aria-label="Discord"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-colors duration-200 hover:text-purple-400"
           >
             <FaDiscord />
           </a>
@@ -55,14 +57,15 @@ function Footer({ darkMode }) {
             aria-label="Gmail"
             target="_blank"
             rel="noopener noreferrer"
+            className="transition-colors duration-200 hover:text-purple-400"
           >
             <MdEmail />
           </a>
         </div>
-        <p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
           &copy; {new Date().getFullYear()} Isack Bahati All rights reserved.
         </p>
-        <p>Designed by Isack</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">Designed by Isack</p>
       </div>
     </footer>
   );

@@ -1,28 +1,63 @@
 import { NavLink } from "react-router-dom";
+import { FaCode } from "react-icons/fa";
 
 const NavBar = ({ darkMode, setDarkMode }) => {
   return (
-    <nav className="nav-container">
-      <NavLink
-        to="/"
-        className={({ isActive }) => (isActive ? "active-link" : "normal-link")}
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/aboutme"
-        className={({ isActive }) => (isActive ? "active-link" : "normal-link")}
-      >
-        AboutMe
-      </NavLink>
-      <NavLink
-        to="/hobbies"
-        className={({ isActive }) => (isActive ? "active-link" : "normal-link")}
-      >
-        Myhobby
-      </NavLink>
+    <nav className="relative flex items-center justify-between px-8 py-4 bg-transparent dark:bg-transparent transition-colors duration-300">
+      {/* Logo with Code Icon */}
+      <div className="flex items-center gap-2">
+        <FaCode size={24} className="text-purple-500" />
+      </div>
+
+      {/* Nav Links - centered */}
+      <div className="absolute left-1/2 bottom-0 flex -translate-x-1/2 -translate-y-1 items-end gap-8">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-500 border-b-2 border-purple-500 pb-1 transition-colors duration-200"
+              : "text-gray-500 dark:text-gray-400 hover:text-purple-500 transition-colors duration-200"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-500 border-b-2 border-purple-500 pb-1 transition-colors duration-200"
+              : "text-gray-500 dark:text-gray-400 hover:text-purple-500 transition-colors duration-200"
+          }
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/Project"
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-500 border-b-2 border-purple-500 pb-1 transition-colors duration-200"
+              : "text-gray-500 dark:text-gray-400 hover:text-purple-500 transition-colors duration-200"
+          }
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          to="/Contact"
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-500 border-b-2 border-purple-500 pb-1 transition-colors duration-200"
+              : "text-gray-500 dark:text-gray-400 hover:text-purple-500 transition-colors duration-200"
+          }
+        >
+          Contact
+        </NavLink>
+      </div>
+
+      <div className="pointer-events-none absolute inset-x-0 bottom-1 h-px bg-purple-300/30"></div>
+
+      {/* Dark Mode Toggle */}
       <button
-        className="toggle-btn"
+        className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200"
         onClick={() => setDarkMode((prev) => !prev)}
         aria-label="Toggle dark mode"
       >

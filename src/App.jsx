@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import AboutMe from "./components/AboutMe";
+import About from "./components/About";
 import Home from "./components/Home";
-import Hobbies from "./components/Hobbies";
+import Project from "./components/Project";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact"
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
@@ -14,16 +15,17 @@ function App() {
     <div
       className={
         darkMode
-          ? "dark bg-zinc-700 text-amber-50 min-h-screen"
-          : "bg-white text-gray-900 min-h-screen"
+          ? "dark bg-[#121212] text-amber-50 min-h-screen"
+          : "bg-zinc-50 text-gray-900 min-h-screen"
       }
     >
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Project" element={<Project />} />
+          <Route path="/Contact" element={<Contact />}/>
         </Routes>
       </div>
       <Footer darkMode={darkMode} />
