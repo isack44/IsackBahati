@@ -20,7 +20,7 @@ const Contact = () => {
             Email: bahatiisack61@gmail.com
           </a>
           <a
-            href="https://linkedin.com/in/isack-bahati-4b0a1b1b6/"
+            href="https://www.linkedin.com/in/isack-bahati-b603a9364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-gray-800 dark:text-gray-100 hover:border-purple-400 dark:hover:border-purple-500 transition-colors"

@@ -17,7 +17,7 @@ function Footer({ darkMode }) {
             <FaFacebook />
           </a>
           <a
-            href="http://linkedin.com/in/isack-bahati-4b0a1b1b6/"
+            href="https://www.linkedin.com/in/isack-bahati-b603a9364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
